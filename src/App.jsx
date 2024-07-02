@@ -2,7 +2,8 @@ import { useState } from 'react'
 // automaticamente se considera "node_modules" como raíz
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './fragments/InformacionCalamaFragment'
-import InformacionCalamaFragment from "./fragments/InformacionCalamaFragment";
+import InformacionCalamaFragment from "./fragments/InformacionCalamaFragment"
+import ColorFavoritoFragment from "./fragments/ColorFavoritoFragment"
 
 function App() {
     // let platoFavorito = "Lasaña"
@@ -28,6 +29,7 @@ function App() {
         </button>
         <hr className="mb-4" />
         <InformacionCalamaFragment />
+        <ColorFavoritoFragment color={color} datos={"123"} />
     </>
   )
 }
