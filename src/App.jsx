@@ -2,11 +2,12 @@ import { useState } from 'react'
 // automaticamente se considera "node_modules" como raíz
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './fragments/InformacionCalamaFragment'
-import InformacionCalamaFragment from "./fragments/InformacionCalamaFragment.jsx";
+import InformacionCalamaFragment from "./fragments/InformacionCalamaFragment";
 
 function App() {
     // let platoFavorito = "Lasaña"
     const [platoFavorito, setPlatoFavorito] = useState('Lasaña')
+    const [color, setColor] = useState('Perú') // Estado de ejemplo, inicializado con perú
 
 //  const [count, setCount] = useState(0)
   // function handleClick() { } // se reemplaza acá dentro por funciones flechas
